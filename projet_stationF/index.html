@@ -2,25 +2,29 @@
 <html>
     <head>
         <title>Recode StationF</title>
+        
         <!-- Lier le CSS avec HTML -->
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
 
         <!-- START header : Menu de la page -->
-        <header>
-            <img src="images/logo.png" alt="Logo de StationF" >
+        <header class="header"> <!--peut y avoir plusieurs header-->
+            <img class="logo" src="./images/logo.png" alt="Logo de StationF" >
             <nav>
                 <!-- UL = Unordered List = Liste non ordonnée -->
-                <ul>
+                <ul class="list-links">
                     <li>
                         <a href="https://www.stationf.co">Start-up</a>
                     </li>
                     <li>
-                        <!-- pour le target : 
-                         _blank -> nouvel onglet
-                         _self -> onglet actuel (ne s'écrit pas)-->
-                        <a href="https://www.stationf.co" target="_blank">Programmes start-up</a>
+                        <!-- pour le target : _blank -> nouvel onglet
+                         _self -> onglet actuel (ne s'écrit pas car par défaut)-->
+                        <a href="https://www.stationf.co" target="_blank">Programmes start-up
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Postuler</a>
                     </li>
                 </ul>
             </nav>
