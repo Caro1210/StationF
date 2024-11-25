@@ -1,17 +1,45 @@
+/* Reset : 
+réinitialise (efface) les styles par défaut du navigateur */
+
+a {
+    text-decoration: none;
+    color: inherit; /* valeur du parent */
+}
+
+ul, ol {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style général : ajout fonts sur tout le html : link CSS google fonts */
+* {
+    font-family: "Cabin", sans-serif;
+}
+
+/* ajout de flux (espaces le long du site entre chaque élément) */
+.flux {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
 /* START : Stylisation du Header */
 .header{
-    background-color: grey;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 
 .list-links{
     display: flex;
-    list-style: none;
     column-gap: 20px;
-
+    align-items: center;
 }
 
 .logo{
@@ -21,13 +49,34 @@
 
 .nav-link{
     text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.button{
+.nav-link:last-child {
     background-color: black;
     color: aliceblue;
-    padding: 5px 10px;
-    border-radius: 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
 }
 
 /*START : Stylisation de la cover */
+.cover {
+    display: flex;
+}
+
+.image-office {
+    width: 55%;
+    flex-shrink: 0;
+}
+
+.icon-scroll {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

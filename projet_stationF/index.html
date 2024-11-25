@@ -5,11 +5,17 @@
         
         <!-- Lier le CSS avec HTML -->
         <link rel="stylesheet" href="./css/style.css">
+
+        <!-- FONTS : ajout en <link // performances site >-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
     </head>
     <body>
 
         <!-- START header : Menu de la page -->
-        <header class="header"> <!--peut y avoir plusieurs header d'où class-->
+        <header class="header flux"> <!--peut y avoir plusieurs header d'où class-->
             <img class="logo" src="./images/logo.png" alt="Logo de StationF" >
             <nav>
                 <!-- UL = Unordered List = Liste non ordonnée -->
@@ -33,16 +39,20 @@
 
         <!-- START : Cover -->
         <main>
-            <section class="cover">
-                <h1>Plus grand campus de start-up du monde à Paris</h1>
-                <p>Rejoignez un campus unique et une communauté de plus de 1.000 start-up, 30 programmes d'accompagnement et de nombreux services au coeur de Paris.</p>
-                <a href="">
-                    <img src="./images/arrow-down.svg" alt="Cliquez ici pour accéder à la section">
-                </a>
-                <img src="./images/home.jpg" alt="Photographie des locaux de Station F">
+            <section class="cover flux">
+                <div>
+                    <h1>Plus grand campus de start-up du monde à Paris</h1>
+                    <p>Rejoignez un campus unique et une communauté de plus de 1.000 start-up, 30 programmes d'accompagnement et de nombreux services au coeur de Paris.</p>
+                    <a href="" class="icon-scroll">
+                        <img src="./images/arrow-down.svg" alt="Cliquez ici pour accéder à la section">
+                    </a>
+                </div>
+                <img src="./images/home.jpg" class="image-office" alt="Photographie des locaux de Station F">
                 
             </section>
         </main>
+        <!-- END : Cover-->
+
         <footer></footer>
     </body>
 </html>
