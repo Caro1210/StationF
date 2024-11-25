@@ -1,4 +1,4 @@
-
+/* START : Stylisation du Header */
 .header{
     background-color: grey;
     display: flex;
@@ -22,3 +22,12 @@
 .nav-link{
     text-transform: uppercase;
 }
+
+.button{
+    background-color: black;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+/*START : Stylisation de la cover */
