@@ -170,10 +170,10 @@ ul, ol {
 
 .programs .container-images li {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     width: calc(50% - 25px / 2); /* calcul pour bien disposer les éléments automatiquement */
     height: 130px;
-    padding: 25px;
+    padding: 30px;
 }
 
 .programs .container-images li img{
