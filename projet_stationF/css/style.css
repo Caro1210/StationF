@@ -26,6 +26,13 @@ ul, ol {
     margin-right: 75px;
 }
 
+@media (max-width: 500px) {
+    .flux {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
 /* START : Stylisation du Header */
 .header{
     display: flex;
@@ -38,36 +45,48 @@ ul, ol {
 
 .list-links{
     display: flex;
-    column-gap: 20px;
+    column-gap: 40px;
     align-items: center;
 }
 
 .logo{
+    width: 125px;
     height: 25px;
-    width: 115px;
 }
 
 .nav-link{
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 500;
 }
 
 .nav-link:last-child {
     background-color: black;
     color: aliceblue;
-    padding: 10px 15px;
-    border-radius: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 500;
 }
 
 /*START : Stylisation de la cover */
 .cover {
     display: flex;
+    align-items: center;
 }
+
+@media (max-width: 500px) {
+    .cover {
+        flex-direction: column !important;
+    }
+}
+
 
 .image-office {
     width: 55%;
     flex-shrink: 0;
+    height: 250px;
+    object-fit: cover; /* conserve la bonne proportion de l'img */
+                       /* "contain" pour logo afin de ne pas le couper */
+    object-position: bottom;
 }
 
 .icon-scroll {
@@ -80,3 +99,15 @@ ul, ol {
     align-items: center;
 }
 
+.cover-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.cover-introduction {
+    margin-bottom: 30px;
+}
+
+.cover-text {
+    padding-right: 100px;
+}
