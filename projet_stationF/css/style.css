@@ -13,6 +13,7 @@ ul, ol {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* adapter les éléments au parent (utile aux sections avec contenant multi images) */
 }
 
 /* Style général : ajout fonts sur tout le html : link CSS google fonts */
@@ -161,7 +162,22 @@ ul, ol {
     flex-grow: 1;
 }
 
-.container-images {
+.programs .container-images {
     display: flex;
     flex-wrap: wrap;
+    gap: 25px;
+}
+
+.programs .container-images li {
+    background-color: white;
+    border-radius: 5px;
+    width: calc(50% - 25px / 2); /* calcul pour bien disposer les éléments automatiquement */
+    height: 130px;
+    padding: 25px;
+}
+
+.programs .container-images li img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
