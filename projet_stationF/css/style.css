@@ -16,6 +16,11 @@ ul, ol {
     box-sizing: border-box; /* adapter les éléments au parent (utile aux sections avec contenant multi images) */
 }
 
+/*scroll plus doux*/
+html {
+    scroll-behavior: smooth;
+}
+
 /* Style général : ajout fonts sur tout le html : link CSS google fonts */
 * {
     font-family: "Cabin", sans-serif;
