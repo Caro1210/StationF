@@ -105,7 +105,6 @@ ul, ol {
 .nav-link:last-child {
     background-color: black;
     color: aliceblue;
-    padding: 15px 30px;
     border-radius: 30px;
     font-weight: 500;
 }
@@ -208,22 +207,40 @@ ul, ol {
     object-fit: contain;
 }
 
-/* START : Stylisation de la section Launch */
+/* START : Stylisation du online */
+
+/* 
+Dégradé écriture
+propriété : function(angle, couleur1, couleur2 debut fin, couleur3, ....) 
+
+EXEMPLES 
+    background: linear-gradient(90deg, blue, red);
+    background: linear-gradient(to left bottom, blue, red);
+    background: linear-gradient(45deg, blue 0%, green 20%, red 50%);
+    background: linear-gradient(0,red 0% 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80% 100%);
+    background: linear-gradient(0, rgba(0, 0, 0),rgba(0, 0, 0, 0) 25% );
+FIN EXEMPLE 
+
+*/
 
 .online {
+    background: linear-gradient(180deg, #202020 0% 50%, white 50% 100%);
+}
+
+.online .online-content {
     display: flex;
     padding: 75px 50px 50px;
-    background: linear-gradient(90deg,#c52c7f, #fba50d);
+    background: linear-gradient(90deg, #ff3592,#ffb800);
 }
 
 .online img {
     width: 50%;
+    padding-right: 50px;
 }
 
 .online .container-texts {
     width: 50%;
     color: white;
-    padding-left: 50px;
 }
 
 .online .container-texts a{
