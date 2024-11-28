@@ -37,6 +37,11 @@ ul, ol {
 .title-2 {
     font-size: 40px;
     margin-bottom: 20px;
+    line-height: 1.25;
+}
+
+.text-paragraphe {
+    line-height: 1.5;
 }
 
 .button {
@@ -44,8 +49,31 @@ ul, ol {
     color: white;
     border-radius: 20px;
     padding: 10px 20px;
-    background-color: red;
     display: inline-block;
+}
+
+.button-orange {
+    background-color: #fba50d;
+}
+
+.button-black {
+    background-color: black;
+}
+
+.button-orange:hover {
+    background: linear-gradient(90deg,#c52c7f, #fba50d);
+    background-size: 200% 100%;
+    background-position: bottom 50px r;
+}
+
+.button-black:hover {
+    background: linear-gradient(to left bottom, grey, black);
+    background: linear-gradient(90deg, grey, black);
+    /*TEST : utiliser une transition
+    background-color: grey;
+    transition: background-color 0.25s;*/
+    background-size: 200% 100%;
+    background-position: right 35% bot;
 }
 
 /* START : Stylisation du Header */
@@ -143,7 +171,6 @@ ul, ol {
 
 .programs .container-texts {
     color: white;
-    line-height: 1.5;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -151,10 +178,9 @@ ul, ol {
 
 .programs .title-2 {
     width: 75%;
-    line-height: 1.25;
 }
 
-.programs .container-texts .button{
+.programs .container-texts .button {
     margin-top: 50px;
 }
 
@@ -180,4 +206,26 @@ ul, ol {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+/* START : Stylisation de la section Launch */
+
+.online {
+    display: flex;
+    padding: 75px 50px 50px;
+    background: linear-gradient(90deg,#c52c7f, #fba50d);
+}
+
+.online img {
+    width: 50%;
+}
+
+.online .container-texts {
+    width: 50%;
+    color: white;
+    padding-left: 50px;
+}
+
+.online .container-texts a{
+    margin-top: 50px;
 }
